@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+	
+
+</head>
+<body>
+    <div class="navbar navbar-fixed-top navbar-page">
+        <div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#">
+							<span data-toggle="tooltip">
+								<span class="glyphicon glyphicon-home"></span>
+							</span>
+							<span class="full-nav"> <b>Home</b> </span>
+						</a>
+					</li>
+					<li>
+						<a href="~/Views/Home/Jobs.cshtml">
+							<span data-toggle="tooltip">
+								<span class="fa fa-suitcase"></span>
+							</span>
+							<span class="full-nav"> <b>Jobs</b> </span>
+						</a>
+					</li>
+					<li>
+						<a href="#about-us">
+							<span data-toggle="tooltip">
+								<span class="fa fa-users"></span>
+							</span>
+							<span class="full-nav"> <b>About Us</b> </span>
+						</a>
+					</li>
+				</ul>
+				@Html.Partial("_LoginPartial")
+			</div><!--/.nav-collapse -->
+        </div>
+    </div>
+
+	@* SignUp modal *@
+	<div id="signUpModal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-sm">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Sign Up</h4>
+				</div>
+				<div class="modal-body text-center">
+					<h5>Fill in the information to register</h5>
+
+					<div class="splitter"></div>
+					<div class="input-group">
+						<span class="input-group-addon" id="passImage"><i class="fa fa-at"></i></span>
+						<input type="text" id="email" class="form-control" placeholder="CofO Email" aria-describedby="fa-at">
+					</div>
+					<br />
+					<div class="input-group">
+						<span class="input-group-addon" id="passImage"><i class="glyphicon glyphicon-lock"></i></span>
+						<input type="password" id="password" class="form-control" placeholder="Enter Password" aria-describedby="passImage">
+					</div>
+					<br />
+					<div class="input-group">
+						<span class="input-group-addon" id="passImage"><i class="glyphicon glyphicon-lock"></i></span>
+						<input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" aria-describedby="passImage">
+					</div>
+					
+					<div class="splitter"></div>
+					What is your name?<br /><br />
+					<div class="input-group">
+						<span class="input-group-addon" id="logImage"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" id="fname" class="form-control" placeholder="First Name" aria-describedby="logImage">
+					</div>
+					<br />
+					<div class="input-group">
+						<span class="input-group-addon" id="passImage"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" id="lname" class="form-control" placeholder="Last Name" aria-describedby="logImage">
+					</div>
+					<br />
+					<button class="btn btn-default" id="submit">Submit</button>
+					<br />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	@* Login Modal *@
+	<div id="loginModal" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-sm">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Login</h4>
+				</div>
+				<div class="modal-body text-center">
+					<h5 class="sub-header">Sign in with</h5>
+
+					<a class="btn btn-primary" rel="publisher" href="#">
+						<i class="fa fa-facebook"><label class="facebook">Facebook</label></i>
+					</a>
+
+					<div class="splitter"></div>
+					<div class="input-group">
+						<span class="input-group-addon" id="logImage"><i class="glyphicon glyphicon-user"></i></span>
+						<input type="text" id="username" class="form-control" placeholder="Username or Email" aria-describedby="logImage">
+					</div>
+					<br/>
+					<div class="input-group">
+						<span class="input-group-addon" id="passImage"><i class="glyphicon glyphicon-lock"></i></span>
+						<input type="password" id="password" class="form-control" placeholder="Password" aria-describedby="passImage">
+					</div>
+					<button class="btn btn-default" id="login">Login</button>
+					<br/>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+	@Scripts.Render("~/bundles/Crypto")
+	@Scripts.Render("~/bundles/Custom")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

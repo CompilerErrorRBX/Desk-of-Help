@@ -1,0 +1,225 @@
+﻿@import url(//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css);
+
+body {
+    margin-top: 100px;
+}
+
+.navbar {
+    background-image: none !important;
+}
+
+.navbar-page {
+    background-color: rgb(234, 234, 234);
+	box-shadow: inset 0px -4px #dddddd;
+	z-index:1000;
+}
+
+.navbar-page .navbar-brand {
+    background-color: rgb(213, 213, 213);
+	z-index:1000;
+}
+
+.navbar-page .navbar-nav > li > a, 
+.navbar-page .navbar-nav > li > a:hover, 
+.navbar-page .navbar-nav > li > a:focus {
+    color: #5cb85c;
+	font-weight:bold;
+}
+.navbar-page .navbar-nav > li > a:hover, 
+.navbar-page .navbar-nav > li > a:focus,
+.navbar-page .navbar-nav > .active > a, 
+.navbar-page .navbar-nav > .active > a:hover, 
+.navbar-page .navbar-nav > .active > a:focus {
+    background-color: rgb(213, 213, 213);
+    color: #5cb85c;
+	font-weight:bold;
+    box-shadow: inset 0px -4px 0px #5cb85c;
+}
+
+.navbar-top .tooltip,
+.navbar-top .tooltip .tooltip-inner {
+	white-space:nowrap;
+}
+
+.navbar-top .navbar-nav > li > a, 
+.navbar-top .navbar-nav > li > a:hover, 
+.navbar-top .navbar-brand:focus, 
+.navbar-top .navbar-nav > li > a:focus {
+    color: #5cb85c;
+}
+.navbar-top .navbar-nav > li > a:hover, 
+.navbar-page .navbar-nav > li > a:focus,
+.navbar-top .navbar-nav > .active > a, 
+.navbar-top .navbar-nav > .active > a:hover, 
+.navbar-top .navbar-nav > .active > a:focus {
+    color: #5cb85c;
+}
+
+.navbar-top .navbar-nav > li > a > span {
+	font-size: 30pt;
+	padding: 7px 8px 7px 6px;
+}
+
+@media (min-width: 768px) {
+  .navbar-right .dropdown-menu {
+    right: 0;
+    left: auto;
+  }
+}
+
+.navbar-brand {
+  float: left;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  z-index:1000;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+} 
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand {
+    margin-left: -15px;
+  }
+}
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  z-index:1000;
+  width:40px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 3px;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+.navbar-page .navbar-toggle .icon-bar {
+  background-color: #5cb85c;
+}
+
+.navbar-toggle:focus {
+	outline-color: #5cb85c;
+}
+
+.panel-default {
+	border-color: #dddddd;
+}
+
+.panel-default > .panel-heading {
+	padding-top:0px;
+	padding-bottom:8px;
+	color: #888888;
+	background-color: rgb(234, 234, 234);
+	border-color: #dddddd;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:0px;
+}
+
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+	border-top-color: #dddddd;
+}
+
+a {
+	color: #5cb85c;
+}
+a:hover,
+a:focus {
+	color: #5cb85c;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.carousel {
+	color:#555555;
+}
+
+.carousel-indicators {
+	top:100%;
+}
+
+.splitter {
+	margin-top:20px;
+	margin-bottom:20px;
+	border-color: #dddddd;
+	border-style:solid;
+	display: none;
+	border-bottom-style:none;
+}
+
+@media (min-width: 1200px) {
+  .splitter {
+    display: block;
+  }
+}
+
+.splitter-center {
+	margin-top:20px;
+	margin-bottom:20px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	border-color: #dddddd;
+	border-style:solid;
+}
+
+h4 {
+	color:#888888;
+}
+
+.header {
+	text-align:center; 
+	color:#555555; 
+	font-size:70px;
+}
+
+.sub-header {
+	text-align:center; 
+	color:#888888;
+}
+
+.sub-header-left {
+	text-align:left; 
+	color:#888888;
+}
+
+.modal-header {
+  background-color:rgb(234, 234, 234);
+  min-height: 16.428571429px;
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.btn-media {
+	border-radius:50%;
+	width:32px; 
+	height:32px; 
+	line-height:18px;  
+}
+
+.facebook {
+	padding-left: 15px;
+	font-family: 'Arial Narrow', Arial, sans-serifsans-serif;
+	font-size: 13pt;
+}
